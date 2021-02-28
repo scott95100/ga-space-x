@@ -11,6 +11,9 @@ import CapsuleUnitContainer from './components/capsules/CapsuleUnitContainer';
 import CoreUnitContainer from './components/cores/CoreUnitContainer'
 import CrewMemberContainer from './components/crewMembers/CrewMemberContainer';
 import DragonContainer from './components/dragons/DragonContainer'
+import LandingpadContainer from './components/landingpads/LandingpadContainer'
+import RoadsterContainer from './components/roadster/RoadsterContainer'
+
 
 
 
@@ -45,6 +48,8 @@ function App() {
         <Link to="/cores">Cores</Link>
         <Link to='/crewMembers'>Crew Members</Link>
         <Link to='/dragons'>Dragon</Link>
+        <Link to='/landingpad'>Landingpads</Link>
+        <Link to='/roadster'>Roadster</Link>
       </nav>
       <h1>GA Space X</h1>
       <Route exact path="/" render={() => <Company company={company}/>} />
@@ -52,6 +57,8 @@ function App() {
       <Route path="/cores" component={CoreUnitContainer} />
       <Route path='/crewMembers' component={CrewMemberContainer} />
       <Route path='/dragons' component={DragonContainer} />
+      <Route path='/landingpad' component={LandingpadContainer} />
+      <Route path='/roadster' component={RoadsterContainer} />
     </div>
   </Router>
   );
